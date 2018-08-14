@@ -1,0 +1,81 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.square {
+  background: #fff;
+  border: 3px solid #333;
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 75px;
+  height: 75px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 75px;
+	cursor: pointer;
+	color: red;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:hover {
+-webkit-box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.header {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.mlist li button{
+	line-height: 15px;
+	background: red;
+	color: #fff;
+	margin-bottom: 5px;
+	padding: 3px 5px;
+	border: 2px solid #000;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.mlist li button:hover {
+	opacity: 0.9;
+}
