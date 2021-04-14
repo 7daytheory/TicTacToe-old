@@ -22,7 +22,7 @@ class Board extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="boardWrap">
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -113,10 +113,10 @@ class Game extends React.Component {
             squares={current.squares}
             onClick={i => this.handleClick(i)}
           />
-        </div>
-        <div className="game-info">
+          <div className="game-info">
           <div class="header">{status}</div>
-          <ol class="mlist">{moves}</ol>
+            <ol class="mlist">{moves}</ol>
+          </div>
         </div>
       </div>
     );
