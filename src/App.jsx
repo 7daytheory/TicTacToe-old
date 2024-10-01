@@ -1,12 +1,12 @@
-import './App.css'
-
 function App() {
-
   return (
-    <>
-    Start
-    </>
-  )
+    <div className="bg-red-800">
+      <div className="bg-red-300 text-4xl">
+        Hello!
+      </div>
+      Start
+    </div>
+  );
 }
 
-export default App
+export default App;
